@@ -1,0 +1,29 @@
+#app-header ul {
+    /* Position & Size */
+    /*position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;*/
+    width: 100%;
+    /* Margin, Border, & Padding */
+    margin: 0;
+    padding: 0;
+    /* Display */
+    /*display: flex;
+    justify-content: space-between;
+    align-items: center;*/
+    background: #efefef;
+    /* Element */
+    list-style-type: none;
+}
+
+/*#app-header ul li::before {
+    content: "< ";
+}
+
+#app-header ul li span {
+}
+
+#app-header ul li::after {
+    content: " />"
+}*/
