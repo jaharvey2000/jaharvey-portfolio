@@ -1,4 +1,4 @@
-function AppFooter() {
+function SiteFooter() {
     return (
         <footer id="app-footer">
             <p>Built by Jared Harvey</p>
@@ -6,4 +6,4 @@ function AppFooter() {
     );
 };
 
-export default AppFooter;
+export default SiteFooter;

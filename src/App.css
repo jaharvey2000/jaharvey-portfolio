@@ -10,7 +10,7 @@
 
 /* ===== ABOUT SECTION ===== */
 @media (min-width: 600px) {
-    #about-me {
+    #aboutSection {
         display: flex;
         align-items: top;
         justify-content: space-between;
@@ -18,35 +18,35 @@
     }
 }
 
-#about-me p {
+#aboutSection p {
     text-align: justify;
 }
 
-#about-me img {
+#aboutSection img {
     max-width: 16rem;
     border-radius: 100%;
 }
 
-/* ===== CONTACT ===== */
-#contact form {
+/* ===== contactSection ===== */
+#contactSection form {
     max-width: 20rem;
     margin: 0 auto;
 }
 
-#contact form div {
+#contactSection form div {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: .5rem 0;
 }
 
-#contact form div input,
-#contact form div textarea {
+#contactSection form div input,
+#contactSection form div textarea {
     width: 100%;
     padding: 0;
 }
 
-#contact form button {
+#contactSection form button {
     display: block;
     width: 100%;
     margin: 1rem 0;

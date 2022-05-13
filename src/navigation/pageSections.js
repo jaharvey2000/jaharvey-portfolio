@@ -1,6 +1,6 @@
 export const pageSections = [
-    { sectionId: 'About', scrollToId: 'about-me' },
-    { sectionId: 'Skills', scrollToId: 'skills' },
-    { sectionId: 'Experience', scrollToId: 'experience' },
-    { sectionId: 'Contact', scrollToId: 'contact' }
+    { sectionId: 'About', scrollToId: 'aboutSection' },
+    { sectionId: 'Skills', scrollToId: 'skillsSection' },
+    { sectionId: 'Experience', scrollToId: 'experienceSection' },
+    { sectionId: 'Contact', scrollToId: 'contactSection' }
 ];

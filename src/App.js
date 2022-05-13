@@ -5,7 +5,7 @@ import About from './pages/About'
 import Skills from './pages/Skills'
 import Experience from './pages/Experience'
 import Contact from './pages/Contact'
-import AppFooter from './pages/AppFooter'
+import SiteFooter from './pages/SiteFooter'
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
         <Experience />
         <Contact />
       </main>
-      <AppFooter />
+      <SiteFooter />
     </>
   );
 }

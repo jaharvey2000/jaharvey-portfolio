@@ -1,7 +1,13 @@
 function Home() {
+    const handleClick = () => {
+        // Since contact is at the bottom we can just scroll directly
+        const element = document.getElementById("contactSection");
+        element.scrollIntoView({behavior: 'smooth'});
+    };
+    
     return (
-        <div id="home" className="section">
-            <p>
+        <div id="homeSection" className="section">
+            <p className="greetings">
                 Hi, I'm
             </p>
             <h1>
@@ -9,11 +15,11 @@ function Home() {
                 <br />
                 I'm a student, developer, & engineer.
             </h1>
-            <p>
+            <p className="blurb">
                 I'm pivoting my career from embedded system design to web and application development and scalable system design. 
                 I'll be joining Carnegie Mellon's Master of Software Engineering - Scalable Systems program in Fall 2022.
             </p>
-            <a href="">Contact Me!</a>
+            <button onClick={handleClick}>Contact Me!</button>
         </div>
     );
 };

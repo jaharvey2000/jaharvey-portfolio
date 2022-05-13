@@ -40,7 +40,7 @@ function Contact() {
     // This form calls the handleSubmit() event handler which sends
     //  the HTTP request to the emailserver.js file
     return (
-        <div id="contact" className="section">
+        <div id="contactSection" className="section">
             <h2>Contact Me</h2>
             <form onSubmit={handleSubmit}>
                 <div>

@@ -1,6 +1,6 @@
 function About() {
     return (
-        <div id="about-me" className="section">
+        <div id="aboutSection" className="section">
             <div>
                 <img src="https://i.imgur.com/Rt6M7FP.jpg" />
             </div>
