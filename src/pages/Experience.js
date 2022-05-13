@@ -1,6 +1,6 @@
 function ExperienceBlock(props) {
     return (
-        <div class="experience">
+        <div className="experience">
             <h3>{ props.title }</h3>
             <h4>
                 { props.description } @ { props.location }
@@ -18,8 +18,8 @@ function ExperienceBlock(props) {
 
 function Experience() {
     return (
-        <div class="section">
-            <h2>Experience.</h2>
+        <div className="section">
+            <h2>Experience</h2>
             <ExperienceBlock 
                 title = "Fluid Shift Monitoring"
                 description = "Senior Capstone Project"

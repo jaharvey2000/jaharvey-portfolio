@@ -1,6 +1,6 @@
 function Skills() {
     return (
-        <div class="section">
+        <div className="section">
             <h2>Skills</h2>
             <p>
                 Languages: C/C++, Python, Java, JavaScript, C#
