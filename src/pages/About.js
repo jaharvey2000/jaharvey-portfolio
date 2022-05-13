@@ -2,7 +2,7 @@ function About() {
     return (
         <div id="aboutSection" className="section">
             <div>
-                <img src="https://i.imgur.com/Rt6M7FP.jpg" />
+                <img src="https://i.imgur.com/Rt6M7FP.jpg" alt="An image of myself."/>
             </div>
             <div>
                 <h2>About Me</h2>
