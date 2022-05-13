@@ -1,5 +1,5 @@
 import './App.css';
-import AppHeader from './navigation/Navbar'
+import Navbar from './navigation/Navbar'
 import Home from './pages/Home'
 import About from './pages/About'
 import Skills from './pages/Skills'
@@ -10,7 +10,7 @@ import AppFooter from './pages/AppFooter'
 function App() {
   return (
     <>
-      <AppHeader />
+      <Navbar />
       <main>
         <Home />
         <About />

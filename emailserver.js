@@ -1,7 +1,5 @@
 // Environment Files
 require('dotenv').config()
-const user_email = process.env.USER_EMAIL;
-const user_pass = process.env.USER_PASS;
 
 // Server Dependencies
 const express = require("express");
@@ -26,8 +24,8 @@ app.listen(port, () => {
 const emailFormSource = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: user_email,
-        pass: user_pass,
+        user: process.env.USER_EMAIL,
+        pass: process.env.USER_PASS,
     },
 });
 
@@ -46,7 +44,7 @@ router.post("/api/contact", (req, res) => {
     // Construct the mail object
     const mail = {
         from: name,
-        to: "thezodyt@gmail.com",
+        to: process.env.DEST_EMAIL,
         subject: "Contact Form Submission",
         html: `<p>Name: ${name}</p>
                <p>Email: ${email}</p>
