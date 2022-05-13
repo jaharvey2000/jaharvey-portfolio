@@ -18,7 +18,7 @@ function ExperienceBlock(props) {
 
 function Experience() {
     return (
-        <div className="section">
+        <div id="experience" className="section">
             <h2>Experience</h2>
             <ExperienceBlock 
                 title = "Fluid Shift Monitoring"

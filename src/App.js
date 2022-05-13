@@ -1,11 +1,11 @@
 import './App.css';
-import AppHeader from './components/AppHeader'
+import AppHeader from './navigation/Navbar'
 import Home from './pages/Home'
 import About from './pages/About'
 import Skills from './pages/Skills'
 import Experience from './pages/Experience'
 import Contact from './pages/Contact'
-import AppFooter from './components/AppFooter'
+import AppFooter from './pages/AppFooter'
 
 function App() {
   return (

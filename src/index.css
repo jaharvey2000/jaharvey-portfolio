@@ -2,4 +2,11 @@ body {
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -mos-osx-font-smoothing: grayscale;
+
+    font-family: 'Red Hat Display', -apple-system, "Segoe UI", Roboto,
+        Verdana, Arial, sans-serif;
+}
+
+code {
+    font-family: 'Courier New', monospace;
 }
