@@ -1,3 +1,5 @@
+// TODO: Use Context
+
 function NavLink({navLinkId, scrollToId}) {
     // TODO: Use Context
 
