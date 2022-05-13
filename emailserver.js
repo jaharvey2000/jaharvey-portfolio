@@ -24,8 +24,8 @@ app.listen(port, () => {
 const emailFormSource = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: process.env.USER_EMAIL,
-        pass: process.env.USER_PASS,
+        user: process.env.FORM_EMAIL,
+        pass: process.env.FORM_PASS,
     },
 });
 
