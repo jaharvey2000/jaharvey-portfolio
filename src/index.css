@@ -2,8 +2,9 @@
     --accent1: 20, 70, 160;     /* #1446a0 */
     --accent2: 85, 12, 24;      /* #550c18 */
     --accent3: 244,157,55;      /* #f49d37*/
-    --background: #ffffff; 
+    --background: 255, 255, 255; 
     --font: 41, 41, 40;         /* #292928 */
+    --fontLighter: 90, 90, 88;
 }
 
 body {

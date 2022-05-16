@@ -9,13 +9,10 @@ function Home() {
         <section>
             <div id="homeSection">
                 <p className="greetings">
-                    Hi, I'm
+                    Hi, my name is
                 </p>
-                <h1>
-                    Jared Harvey.
-                    <br />
-                    I'm a student, developer, & engineer.
-                </h1>
+                <h1>Jared Harvey.</h1>
+                <h1>I'm a student, developer, & engineer.</h1>
                 <p className="blurb">
                     I'm pivoting my career from embedded system design to web and application development and scalable system design. 
                     I'll be joining Carnegie Mellon's Master of Software Engineering - Scalable Systems program in Fall 2022.

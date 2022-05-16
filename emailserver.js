@@ -53,6 +53,8 @@ router.post("/api/contact", (req, res) => {
 
     // Send the email and reply with the status
     emailFormSource.sendMail(mail, (error) => {
-        error ? res.json({status: "ERROR"}) : res.json({status: "Message Sent"});
+        error ? res.json({status: "ERROR"}) : res.json(
+            {status: "Thanks for the message! I'll get back to you soon."}
+        );
     });
 });
