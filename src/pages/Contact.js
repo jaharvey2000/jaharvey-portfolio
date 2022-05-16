@@ -44,23 +44,25 @@ function Contact() {
     // This form calls the handleSubmit() event handler which sends
     //  the HTTP request to the emailserver.js file
     return (
-        <section id="contactSection" ref={contactRef}>
-            <h2>Contact Me</h2>
-            <form onSubmit={handleSubmit}>
-                <div>
-                    <label htmlFor="name">Name</label>
-                    <input type="text" id="name" required />
-                </div>
-                <div>
-                    <label htmlFor="email">Email</label>
-                    <input type="text" id="email" required />
-                </div>
-                <div>
-                    <label htmlFor="message">Message</label>
-                    <textarea id="message" required />
-                </div>
-                <button type="submit">{status}</button>
-            </form>
+        <section ref={contactRef}>
+            <div id="contactSection">
+                <h2>Contact Me</h2>
+                <form onSubmit={handleSubmit}>
+                    <div>
+                        <label htmlFor="name">Name</label>
+                        <input type="text" id="name" required />
+                    </div>
+                    <div>
+                        <label htmlFor="email">Email</label>
+                        <input type="text" id="email" required />
+                    </div>
+                    <div>
+                        <label htmlFor="message">Message</label>
+                        <textarea id="message" required />
+                    </div>
+                    <button type="submit">{status}</button>
+                </form>
+            </div>
         </section>
     );
 };

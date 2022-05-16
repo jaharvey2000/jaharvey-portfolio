@@ -1,28 +1,30 @@
 :root {
-    --lightBG: #fff;
-    --lightFont: #292928;
-    --lightAccent1: #1446a0;
-    --lightAccent2: #faff7f;
+    --accent1: 20, 70, 160;     /* #1446a0 */
+    --accent2: 85, 12, 24;      /* #550c18 */
+    --accent3: 244,157,55;      /* #f49d37*/
+    --background: #ffffff; 
+    --font: 41, 41, 40;         /* #292928 */
 }
 
 body {
     margin: 0;
-    background: var(--lightBG);
+    background: var(--background);
 
-    color: var(--lightFont);
+    color: var(--font);
     font-family: 'Red Hat Display', -apple-system, "Segoe UI", Roboto,
         Verdana, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -mos-osx-font-smoothing: grayscale;
 }
 
-p {
-    margin-block-end: 0;
-}
+/* p {
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+} */
 
-button {
-    margin-top: 1em;
-}
+/* button {
+    margin-top: 1rem;
+} */
 
 code {
     font-family: 'Courier New', monospace;

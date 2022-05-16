@@ -1,4 +1,3 @@
-import './Navbar.css'
 import NavLink from './NavLink'
 import { pageSections } from './pageSections';
 
