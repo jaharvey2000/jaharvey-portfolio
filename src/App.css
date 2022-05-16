@@ -1,10 +1,10 @@
-.section {
+section {
     max-width: 45rem;
     margin: 1rem auto;
     padding: 1rem;
 }
 
-.section h2 {
+section h2 {
     margin: 0;
 }
 

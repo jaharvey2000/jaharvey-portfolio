@@ -6,7 +6,7 @@ function Home() {
     };
     
     return (
-        <div id="homeSection" className="section">
+        <section id="homeSection">
             <p className="greetings">
                 Hi, I'm
             </p>
@@ -20,7 +20,7 @@ function Home() {
                 I'll be joining Carnegie Mellon's Master of Software Engineering - Scalable Systems program in Fall 2022.
             </p>
             <button onClick={handleClick}>Contact Me!</button>
-        </div>
+        </section>
     );
 };
 

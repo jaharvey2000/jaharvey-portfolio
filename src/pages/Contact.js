@@ -40,7 +40,7 @@ function Contact() {
     // This form calls the handleSubmit() event handler which sends
     //  the HTTP request to the emailserver.js file
     return (
-        <div id="contactSection" className="section">
+        <section id="contactSection">
             <h2>Contact Me</h2>
             <form onSubmit={handleSubmit}>
                 <div>
@@ -57,7 +57,7 @@ function Contact() {
                 </div>
                 <button type="submit">{status}</button>
             </form>
-        </div>
+        </section>
     );
 };
 
