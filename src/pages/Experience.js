@@ -1,12 +1,13 @@
 import React from 'react';
 import { useNav } from '../customHooks/useNav';
+import { experienceList } from './experienceList';
 
 function ExperienceBlock(props) {
     return (
         <div className="experience">
             <div className="experienceHeader">
                 <h3 className="experienceTitle">{ props.title }</h3>
-                <h3 className="experienceDates">{ props.startDate } - { props.endDate }</h3>
+                <h3 className="experienceDates">{ props.dates }</h3>
             </div>
             <h4>
                 { props.description } <span className="location">@ { props.location }</span>
@@ -28,45 +29,16 @@ function Experience() {
         <section ref={experienceRef}>
             <div id="experienceSection">
                 <h2>Experience</h2>
-                <ExperienceBlock 
-                    title = "Fluid Shift Monitoring"
-                    description = "Senior Capstone Project"
-                    location = "The University of Alabama"
-                    startDate = "August 2021"
-                    endDate = "May 2022"
-                    skillsUsed = "Embedded C, Arduino, Real-Time Operating Systems, MATLAB"
-                    summary = "Lorem ipsum." 
-                />
-
-                <ExperienceBlock 
-                    title = "Methods Time-Management"
-                    description = "Senior Research Project"
-                    location = "The University of Alabama & Mercedes-Benz U.S. International"
-                    startDate = "January 2022"
-                    endDate = "May 2022"
-                    skillsUsed = "C#, .NET, WPF, Kinect Hardware"
-                    summary = "Lorem ipsum." 
-                />
-
-                <ExperienceBlock 
-                    title = "Automated Software Testing Intern"
-                    description = "Internship"
-                    location = "Northrop Grumman, Huntsville, AL"
-                    startDate = "May 2021"
-                    endDate = "July 2021"
-                    skillsUsed = "FrogLogic Squish, Python, Automated Testing, Software Leadership"
-                    summary = "Lorem ipsum." 
-                />
-
-                <ExperienceBlock 
-                    title = "Machine Learning Intern"
-                    description = "Internship"
-                    location = "Northrop Grumman, Huntsville, AL"
-                    startDate = "May 2020"
-                    endDate = "July 2020"
-                    skillsUsed = "Python, Tensorflow, Keras, Scikit-Learn, Pandas, Numpy"
-                    summary = "Lorem ipsum." 
-                />
+                {experienceList.map(({title, description, location, dates, skillsUsed, summary}) => (
+                    <ExperienceBlock 
+                        title={title} 
+                        description={description} 
+                        location={location}
+                        dates={dates} 
+                        skillsUsed={skillsUsed} 
+                        summary={summary} 
+                    />
+                ))}
             </div>
         </section>
     );

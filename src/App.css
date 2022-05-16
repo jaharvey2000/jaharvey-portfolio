@@ -115,6 +115,44 @@ section h2 {
     border-radius: 100%;
 }
 
+/* ===== SKILLS SECTION ===== */
+.skillList {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+#skillsSection h3 {
+    margin-bottom: .5rem;
+}
+
+.skill {
+    color: rgb(var(--accent1));
+    background: rgba(var(--font), 0.1);
+    width: 100%;
+    border-radius: .5rem;
+    padding: .5rem;
+    text-align: center;
+}
+
+.skill i {
+    font-size: xx-large;
+}
+
+.skill p {
+    margin: 0;
+}
+
+.skill .skillName {
+    font-weight: bold;
+}
+
+.skill .skillKnowledge {
+    font-size: small;
+    font-style: italic;
+}
+
+
 /* ===== EXPERIENCE SECTION ===== */
 .experience .experienceHeader {
     display: flex;
