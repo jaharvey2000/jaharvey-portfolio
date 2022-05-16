@@ -1,11 +1,42 @@
+/* ===== NAVBAR ===== */
+nav span {
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.2s ease;
+    transition-delay: 0.25s;
+}
+
+nav span.activeClass {
+    border-bottom: 1px solid #1e1e1e;
+}
+
+/* ===== SECTION ===== */
 section {
     max-width: 45rem;
     margin: 1rem auto;
     padding: 1rem;
 }
 
-section h2 {
+section h1, h2 {
     margin: 0;
+}
+
+/* ===== HOME SECTION ===== */
+#homeSection .greetings {
+    margin-bottom: 0;
+    color: var(--lightAccent1);
+    font-weight: bold;
+}
+
+#homeSection h1 {
+    margin-top: 0;
+}
+
+#homeSection .blurb {
+    text-align: justify;
+}
+
+#homeSection button {
+    
 }
 
 /* ===== ABOUT SECTION ===== */
@@ -27,7 +58,7 @@ section h2 {
     border-radius: 100%;
 }
 
-/* ===== contactSection ===== */
+/* ===== CONTACT SECTION ===== */
 #contactSection form {
     max-width: 20rem;
     margin: 0 auto;
@@ -47,9 +78,7 @@ section h2 {
 }
 
 #contactSection form button {
-    display: block;
     width: 100%;
-    margin: 1rem 0;
 }
 
 #app-footer {
