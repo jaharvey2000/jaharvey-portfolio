@@ -1,7 +1,9 @@
-// TODO: Use Context
+import React, { useContext } from 'react';
+import { NavContext } from '../context/NavContext';
 
 function NavLink({navLinkId, scrollToId}) {
-    // TODO: Use Context
+    // Curly braces are used to destructure a dictionary
+    const { activeNavLinkId, setActiveNavLinkId } = useContext(NavContext);
 
     const handleClick = () => {
         // Get the section we want to go to
@@ -14,12 +16,17 @@ function NavLink({navLinkId, scrollToId}) {
         // Calculate scroll offset
         const scrollY = element.getBoundingClientRect().top + window.pageYOffset - headerHeight;
 
-        // Scroll to the element
+        // Scroll to the element & update the nav
+        setActiveNavLinkId(navLinkId);
         window.scrollTo({top: scrollY, behavior: 'smooth'});
     };
 
     return (
-        <span id={navLinkId} onClick={handleClick}>
+        <span 
+            id={navLinkId} 
+            onClick={handleClick}
+            className={(activeNavLinkId === navLinkId) ? 'activeClass' : ''}
+        >
             {navLinkId}
         </span>
     );

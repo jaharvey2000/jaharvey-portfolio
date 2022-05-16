@@ -1,6 +1,12 @@
+import React from 'react';
+import { useNav } from '../customHooks/useNav';
+
 function About() {
+    // Use the Nav Hook 
+    const aboutRef = useNav('About');
+
     return (
-        <section id="aboutSection">
+        <section id="aboutSection" ref={aboutRef}>
             <div>
                 <img src="https://i.imgur.com/Rt6M7FP.jpg" alt="An image of myself."/>
             </div>

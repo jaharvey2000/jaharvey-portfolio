@@ -26,3 +26,5 @@ const NavProvider = ({ children }) => {
         </NavContext.Provider>
     );
 };
+
+export default NavProvider;

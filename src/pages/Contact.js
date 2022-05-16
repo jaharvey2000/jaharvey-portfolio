@@ -1,6 +1,10 @@
 import React, {useState} from 'react';
+import { useNav } from '../customHooks/useNav';
 
 function Contact() {
+    // Use Nav Hook
+    const contactRef = useNav('Contact');
+
     // Status Hook
     const [status, setStatus] = useState("Submit");
 
@@ -40,7 +44,7 @@ function Contact() {
     // This form calls the handleSubmit() event handler which sends
     //  the HTTP request to the emailserver.js file
     return (
-        <section id="contactSection">
+        <section id="contactSection" ref={contactRef}>
             <h2>Contact Me</h2>
             <form onSubmit={handleSubmit}>
                 <div>

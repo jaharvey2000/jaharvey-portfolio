@@ -1,6 +1,12 @@
+import React, {useState} from 'react';
+import { useNav } from '../customHooks/useNav';
+
 function Skills() {
+    // Use Nav Hook
+    const skillsRef = useNav('Skills');
+
     return (
-        <section id="skillsSection">
+        <section id="skillsSection" ref={skillsRef}>
             <h2>Skills</h2>
             <p>
                 Languages: C/C++, Python, Java, JavaScript, C#

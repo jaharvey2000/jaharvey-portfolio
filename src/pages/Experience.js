@@ -1,3 +1,6 @@
+import React from 'react';
+import { useNav } from '../customHooks/useNav';
+
 function ExperienceBlock(props) {
     return (
         <div className="experience">
@@ -17,8 +20,11 @@ function ExperienceBlock(props) {
 };
 
 function Experience() {
+    // Use Nav Hook
+    const experienceRef = useNav('Experience');
+
     return (
-        <section id="experienceSection">
+        <section id="experienceSection" ref={experienceRef}>
             <h2>Experience</h2>
             <ExperienceBlock 
                 title = "Fluid Shift Monitoring"
