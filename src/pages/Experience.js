@@ -4,13 +4,14 @@ import { useNav } from '../customHooks/useNav';
 function ExperienceBlock(props) {
     return (
         <div className="experience">
-            <h3>{ props.title }</h3>
+            <div className="experienceHeader">
+                <h3 className="experienceTitle">{ props.title }</h3>
+                <h3 className="experienceDates">{ props.startDate } - { props.endDate }</h3>
+            </div>
             <h4>
-                { props.description } @ { props.location }
+                { props.description } <span className="location">@ { props.location }</span>
                 <br />
-                { props.startDate } - { props.endDate }
-                <br />
-                { props.skillsUsed }
+                <span className="experienceSkills">{ props.skillsUsed }</span>
             </h4>
             <p>
                 { props.summary }
