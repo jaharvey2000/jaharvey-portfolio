@@ -1,5 +1,6 @@
 import NavLink from './NavLink'
 import { pageSections } from '../data/pageSectionData';
+import '../style/Navbar.css'
 
 function Navbar() {
     return (

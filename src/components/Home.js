@@ -1,7 +1,7 @@
 import '../style/Home.css';
 import { useNav } from '../customHooks/useNav';
 
-function PageButtons() {
+function ContactButton() {
     const handleClick = () => {
         // Since contact is at the bottom we can just scroll directly
         const element = document.getElementById("contactSection");
@@ -11,11 +11,25 @@ function PageButtons() {
     return (
         <button onClick={handleClick}>Contact Me!</button>
     );
+}
+
+function ResumeButton() {
+    return (
+        <a className="linkButton" href="../data/Resume.pdf">My Resume</a>
+    );
+}
+
+function PageButtons() {
+    return (
+        <div class="pageButtons">
+            <ContactButton />
+            <ResumeButton />
+        </div>
+    )
 };
 
 function Home() {
     const homeRef = useNav('Home');
-    
     return (
         <section ref={homeRef}>
             <div id="homeSection">

@@ -30,8 +30,8 @@ function About() {
                         idea in a sandbox, I love to workshop my skills to become a better engineer.
                     </p>
                 </div>
+                <Skills />
             </div>
-            <Skills />
         </section>
     );
 };

@@ -1,6 +1,8 @@
 /* ===== HOME SECTION ===== */
 #homeSection {
     font-size: large;
+    display: flex;
+    gap: 2rem;
 }
 
 #homeSection .greetings {
@@ -24,19 +26,12 @@
     border-radius: 8rem;
 }
 
-/* #homeSection button, #contactSection button {
-    background: none;
-    border: 1px solid rgb(var(--accent1));
-    border-radius: .25rem;
-    font-size: large;
-    padding: .75rem 1.5rem;
-    margin: 0 auto;
-    color: rgb(var(--accent1));
-    margin-top: 1em;
-    transition: .2s ease;
+.pageButtons {
+    display: flex;
+    justify-content: start;
+    gap: 2rem;
 }
 
-#homeSection button:hover, #contactSection button:hover {
-    background: rgba(var(--accent1), 0.2);
-    cursor: pointer;
-} */
+.pageButtons button, .pageButtons .linkButton {
+    margin: 1rem 0;
+}

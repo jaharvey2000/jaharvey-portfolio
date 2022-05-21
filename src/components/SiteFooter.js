@@ -1,3 +1,5 @@
+import '../style/Footer.css'
+
 function SiteFooter() {
     return (
         <footer id="app-footer">

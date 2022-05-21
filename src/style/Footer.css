@@ -1,0 +1,7 @@
+/* ===== FOOTER ===== */
+#app-footer {
+    background: rgb(var(--font));
+    padding: 1rem 0;
+    text-align: center;
+    color: rgb(var(--background));
+}
