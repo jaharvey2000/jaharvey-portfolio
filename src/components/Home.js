@@ -15,7 +15,9 @@ function ContactButton() {
 
 function ResumeButton() {
     return (
-        <a className="linkButton" href="../data/Resume.pdf">My Resume</a>
+        <a className="linkButton" href="">
+                My Resume
+        </a>
     );
 }
 
