@@ -13,10 +13,10 @@ function App() {
       <NavProvider>
         <Navbar />
         <main>
-            <Home />
-            <About />
-            <Experience />
-            <Contact />
+          <Home />
+          <About />
+          <Experience />
+          <Contact />
         </main>
       </NavProvider>
       <SiteFooter />

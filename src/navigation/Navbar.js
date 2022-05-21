@@ -1,5 +1,5 @@
 import NavLink from './NavLink'
-import { pageSections } from '../data/pageSections';
+import { pageSections } from '../data/pageSectionData';
 
 function Navbar() {
     return (

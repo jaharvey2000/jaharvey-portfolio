@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNav } from '../customHooks/useNav';
-import { experienceList } from '../data/experienceList';
+import { experienceList } from '../data/experienceData';
 import '../style/Experience.css'
 
 function ExperienceBlock(props) {

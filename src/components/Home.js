@@ -1,4 +1,5 @@
 import '../style/Home.css';
+import { useNav } from '../customHooks/useNav';
 
 function PageButtons() {
     const handleClick = () => {
@@ -13,8 +14,10 @@ function PageButtons() {
 };
 
 function Home() {
+    const homeRef = useNav('Home');
+    
     return (
-        <section>
+        <section ref={homeRef}>
             <div id="homeSection">
                 <div className="intro">
                     <p className="greetings">Hi, my name is</p>
