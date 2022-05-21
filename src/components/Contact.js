@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import { useNav } from '../customHooks/useNav';
+import '../style/Contact.css'
 
 function Contact() {
     // Use Nav Hook

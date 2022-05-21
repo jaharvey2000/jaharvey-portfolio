@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { useNav } from '../customHooks/useNav';
-import { languages, frontend, backend } from './skillList';
+import { languages, frontend, backend } from '../data/skillList';
+import '../style/Skills.css'
 
 function Skill(props) {
     return (
@@ -20,15 +21,6 @@ function Skills() {
         <section ref={skillsRef}>
             <div id="skillsSection">
                 <h2>Skills</h2>
-                {/* <p>
-                    Languages: C/C++, Python, Java, JavaScript, C#
-                </p>
-                <p>
-                    Frontend: React.js, Bootstrap, HTML/CSS, WPF
-                </p>
-                <p>
-                    Backend: Node.js, .NET, SQL (Oracle), NoSQL (MondoDB)
-                </p> */}
                 <h3>Languages</h3>
                 <div class="skillList">
                     {languages.map(({name, level, icon}) => (

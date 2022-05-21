@@ -1,5 +1,7 @@
 import React from 'react';
 import { useNav } from '../customHooks/useNav';
+import Skills from './Skills'
+import '../style/About.css'
 
 function About() {
     // Use the Nav Hook 
@@ -8,9 +10,6 @@ function About() {
     return (
         <section ref={aboutRef}>
             <div id="aboutSection">
-                <div className="imageContainer">
-                    <img src="https://i.imgur.com/Rt6M7FP.jpg" alt="An image of myself."/>
-                </div>
                 <div className="aboutContainer">
                     <h2>About Me</h2>
                     <p>
@@ -32,6 +31,7 @@ function About() {
                     </p>
                 </div>
             </div>
+            <Skills />
         </section>
     );
 };

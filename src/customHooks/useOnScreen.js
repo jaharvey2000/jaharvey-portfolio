@@ -21,7 +21,7 @@ export function useOnScreen(ref) {
     useEffect(() => {
         observerRef.current = new IntersectionObserver(
             ([entry]) => setIsOnScreen(entry.isIntersecting),   // Callback
-            { threshold: [1.0] }                    // Options
+            { threshold: [0.5] }                    // Options
         );
     }, []);
 

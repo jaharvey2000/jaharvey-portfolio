@@ -1,15 +1,23 @@
-import './App.css';
-import Navbar from './navigation/Navbar'
-import Main from './pages/Main'
+import './style/App.css';
 import NavProvider from './context/NavContext'
-import SiteFooter from './pages/SiteFooter'
+import Navbar from './navigation/Navbar'
+import Home from './components/Home'
+import About from './components/About'
+import Experience from './components/Experience'
+import Contact from './components/Contact'
+import SiteFooter from './components/SiteFooter'
 
 function App() {
   return (
     <>
       <NavProvider>
         <Navbar />
-        <Main />
+        <main>
+            <Home />
+            <About />
+            <Experience />
+            <Contact />
+        </main>
       </NavProvider>
       <SiteFooter />
     </>
