@@ -15,8 +15,7 @@ function Skill(props) {
 function Skills() {
     return (
         <div id="skillsSection">
-            <h2>Skills</h2>
-            <h3>Languages</h3>
+            <h3>What I Use</h3>
             <div class="skillList">
                 {languages.map(({name, level, icon}) => (
                     <Skill
@@ -25,9 +24,6 @@ function Skills() {
                         deviconName={icon}
                     />
                 ))}
-            </div>
-            <h3>Frontend</h3>
-            <div class="skillList">
                 {frontend.map(({name, level, icon}) => (
                     <Skill
                         skillName={name}
@@ -35,9 +31,6 @@ function Skills() {
                         deviconName={icon}
                     />
                 ))}
-            </div>
-            <h3>Backend</h3>
-            <div class="skillList">
                 {backend.map(({name, level, icon}) => (
                     <Skill
                         skillName={name}
